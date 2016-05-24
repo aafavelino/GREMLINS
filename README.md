@@ -7,8 +7,12 @@
 
 ##Compilação e execução
 
+```shell
+g++ -Wall-std=c++11 -pedantic -I include/ src/driver_gremlins.cpp -o bin/exe 
+```
+
 ##Autores:
 
-Adelino Afonso 
+Adelino Afonso Fernandes Avelino
 
-Irene Ginani 
+Irene Ginani Costa Pinheiro
