@@ -25,7 +25,7 @@ public:
   * @brief Construtor Vector
   * @ Param x O tamanho do vetor
   */
-    Vector(size_t x = 1); //ok
+    Vector(size_t x = 10); //ok
 /**
   * @brief Destrutor Vector
   */

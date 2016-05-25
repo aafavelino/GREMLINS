@@ -132,5 +132,3 @@ template <typename Obj>
 typename Vector<Obj>::iterator Vector<Obj>::end(){
 	return typename Vector<Obj>::iterator(vetor.get()+tamanho);
 }
-
-//http://www.cplusplus.com/reference/memory/unique_ptr/get/
