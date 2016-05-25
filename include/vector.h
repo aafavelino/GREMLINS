@@ -25,22 +25,11 @@ public:
   * @brief Construtor Vector
   * @ Param x O tamanho do vetor
   */
-    Vector(size_t x = 10); //ok
+    Vector(size_t x = 10  ); //ok
 /**
   * @brief Destrutor Vector
   */
     ~Vector(){}
-
- /* Copy constructor.
-   Vector(const Vector& other): tamanho(other.tamanho), x_capacidade(other.x_capacidade),vetor(new Obj[other.x_capacidade])
-   {
-    std::unique_copy(other.cbegin(), other.cend(), vetor);
-    this->x_capacidade = other.x_capacidade;
-    this->tamanho = other.tamanho;
-    vetor(new Foo);
-    
-
-   }*/
 
 /**
   * @brief Pega tamanho Vector
