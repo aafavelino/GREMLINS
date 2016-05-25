@@ -4,7 +4,7 @@
 ##Descrição
 
 ##Limitações
-<<<<EM DESENVOLVIMENTO>>>>
+~EM DESENVOLVIMENTO~
 
 ##Compilação e execução
 
