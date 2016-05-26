@@ -16,9 +16,10 @@ SLPool::~SLPool(){
 }
 
 void* SLPool::Allocate(size_t bytes){
-
+    size_t Nblocks = [(bytes + sizeof(Header))/sizeof(Block))];
+    
 }
 
 void SLPool::Free(void* _ptr){
-    
+
 }

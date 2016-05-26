@@ -7,8 +7,8 @@ void * operator new ( size_t bytes, StoragePool & p )
 {
 	Tag* const tag = reinterpret_cast<Tag *> ( p.Allocate(bytes + sizeof(Tag)) );
 	tag->pool = &p;
-// skip sizeof tag to get the raw data-block.
-return ( reinterpret_cast<void *>( tag + 1U ) );
+	// skip sizeof tag to get the raw data-block.
+	return ( reinterpret_cast<void *>( tag + 1U ) );
 }
 
 void * operator new ( size_t bytes ) 
