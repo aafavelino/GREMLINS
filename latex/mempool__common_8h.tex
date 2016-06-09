@@ -1,0 +1,112 @@
+\hypertarget{mempool__common_8h}{}\section{include/mempool\+\_\+common.h File Reference}
+\label{mempool__common_8h}\index{include/mempool\+\_\+common.\+h@{include/mempool\+\_\+common.\+h}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}Storage\+Pool.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mempool\+\_\+common.\+inl\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_tag}{Tag}
+\begin{DoxyCompactList}\small\item\em struct tag que possui um roteiro do tipo \hyperlink{class_storage_pool}{Storage\+Pool} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{mempool__common_8h_ac5e850be5277fe21a0924d90adf671e6}{operator new} (size\+\_\+t bytes, \hyperlink{class_storage_pool}{Storage\+Pool} \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador new. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{mempool__common_8h_a123745987bcf8adf0e5fa614a20c0137}{operator new} (size\+\_\+t bytes)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador new. \end{DoxyCompactList}\item 
+void \hyperlink{mempool__common_8h_a49aeafb236d8e2fa3f1b687b6e0122db}{operator delete} (void $\ast$arg) noexcept
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador delete. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{mempool__common_8h_a416a45bfcfcd41af3cb1caafca84761d}{operator new\mbox{[}$\,$\mbox{]}} (size\+\_\+t bytes, \hyperlink{class_storage_pool}{Storage\+Pool} \&p)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador new\mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{mempool__common_8h_a9e317f35c05046679fe9434fb519068f}{operator new\mbox{[}$\,$\mbox{]}} (size\+\_\+t bytes)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador new\mbox{[}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}}
+\subsubsection[{\texorpdfstring{operator delete(void $\ast$arg) noexcept}{operator delete(void *arg) noexcept}}]{\setlength{\rightskip}{0pt plus 5cm}void operator delete (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [noexcept]}}\hypertarget{mempool__common_8h_a49aeafb236d8e2fa3f1b687b6e0122db}{}\label{mempool__common_8h_a49aeafb236d8e2fa3f1b687b6e0122db}
+
+
+Sobrecarga do operador delete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & do tipo void utilizado para auxiliar destruir a memoria \\
+\hline
+\end{DoxyParams}
+\index{mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}!operator new@{operator new}}
+\index{operator new@{operator new}!mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}}
+\subsubsection[{\texorpdfstring{operator new(size\+\_\+t bytes, Storage\+Pool \&p)}{operator new(size_t bytes, StoragePool &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes, }
+\item[{{\bf Storage\+Pool} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{mempool__common_8h_ac5e850be5277fe21a0924d90adf671e6}{}\label{mempool__common_8h_ac5e850be5277fe21a0924d90adf671e6}
+
+
+Sobrecarga do operador new. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & do tipo size\+\_\+t utilizado para calcular quanto é necessário alocar \\
+\hline
+{\em p} & do tipo \hyperlink{class_storage_pool}{Storage\+Pool} para ser utilizado como memória \\
+\hline
+\end{DoxyParams}
+\index{mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}!operator new@{operator new}}
+\index{operator new@{operator new}!mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}}
+\subsubsection[{\texorpdfstring{operator new(size\+\_\+t bytes)}{operator new(size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{mempool__common_8h_a123745987bcf8adf0e5fa614a20c0137}{}\label{mempool__common_8h_a123745987bcf8adf0e5fa614a20c0137}
+
+
+Sobrecarga do operador new. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & do tipo size\+\_\+t utilizado para calcular quanto é necessário alocar \\
+\hline
+\end{DoxyParams}
+\index{mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}!operator new\mbox{[}$\,$\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}$\,$\mbox{]}@{operator new[]}!mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}}
+\subsubsection[{\texorpdfstring{operator new[](size\+\_\+t bytes, Storage\+Pool \&p)}{operator new[](size_t bytes, StoragePool &p)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes, }
+\item[{{\bf Storage\+Pool} \&}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{mempool__common_8h_a416a45bfcfcd41af3cb1caafca84761d}{}\label{mempool__common_8h_a416a45bfcfcd41af3cb1caafca84761d}
+
+
+Sobrecarga do operador new\mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & do tipo size\+\_\+t utilizado para calcular quanto é necessário alocar \\
+\hline
+{\em p} & do tipo \hyperlink{class_storage_pool}{Storage\+Pool} para ser utilizado como memória \\
+\hline
+\end{DoxyParams}
+\index{mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}!operator new\mbox{[}$\,$\mbox{]}@{operator new[]}}
+\index{operator new\mbox{[}$\,$\mbox{]}@{operator new[]}!mempool\+\_\+common.\+h@{mempool\+\_\+common.\+h}}
+\subsubsection[{\texorpdfstring{operator new[](size\+\_\+t bytes)}{operator new[](size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ operator new\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{mempool__common_8h_a9e317f35c05046679fe9434fb519068f}{}\label{mempool__common_8h_a9e317f35c05046679fe9434fb519068f}
+
+
+Sobrecarga do operador new\mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & do tipo size\+\_\+t utilizado para calcular quanto é necessário alocar \\
+\hline
+\end{DoxyParams}

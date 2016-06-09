@@ -1,0 +1,54 @@
+\#\+G\+R\+E\+M\+L\+I\+NS \subsubsection*{Ge\+R\+Enciador de Memoria com L\+Ista e\+Ncadeada Simples}
+
+\subsection*{Descrição}
+
+O G\+R\+E\+M\+L\+I\+NS é um gerenciador de memória que requisita ao sistema operacional um determinado bloco de memória e a partir do mesmo são realizadas operações de alocação de memória em blocos menores quando solicitado pelo cliente. No gremlins existem duas funções uma Allocate e uma Free nas quais uma realiza alocações e a outra libera memória alocada. Neste trabalho tivemos a colaboração do Professor Selan, na funcão de testes Storage\+Pool\+Test com o uso da priority\+\_\+queue a qual até então não estava sendo utilizada.
+
+\subsection*{Compilação e execução}
+
+{\bfseries Avaliando o Desempenho do GM} 
+\begin{DoxyCode}
+1 g++ -std=c++11 -pedantic -I include/ src/driver\_gremlins.cpp -o bin/exe && ./bin/exe
+\end{DoxyCode}
+
+
+{\bfseries Teste GM vs SO} 
+\begin{DoxyCode}
+1 g++ -std=c++11 -pedantic -I include/ src/drive\_comparador.cpp -o bin/exe && ./bin/exe 
+\end{DoxyCode}
+
+
+{\bfseries Teste de Allocate e Free} 
+\begin{DoxyCode}
+1 g++ -std=c++11 -pedantic -I include/ src/driver\_generico.cpp -o bin/exe -D TIPO1 && ./bin/exe
+\end{DoxyCode}
+
+
+{\bfseries Teste de Allocate Best e Free} 
+\begin{DoxyCode}
+1 g++ -std=c++11 -pedantic -I include/ src/driver\_generico.cpp -o bin/exe -D TIPO2 && ./bin/exe
+\end{DoxyCode}
+ \subsection*{Autores\+:}
+
+Adelino Afonso Fernandes Avelino
+\begin{DoxyItemize}
+\item \href{https://github.com/aafavelino}{\tt Git\+Hub}
+\end{DoxyItemize}
+
+Irene Ginani Costa Pinheiro
+\begin{DoxyItemize}
+\item \href{https://github.com/IreneGinani}{\tt Git\+Hub}
+\end{DoxyItemize}
+
+\subsection*{Politica de colaboração}
+
+{\bfseries Colaborador}
+
+Selan R. dos Santos
+\begin{DoxyItemize}
+\item \href{https://www.dimap.ufrn.br/~selan/index.html}{\tt D\+I\+M\+Ap}
+\end{DoxyItemize}
+
+\subsection*{Disponível em\+:}
+
+\href{https://github.com/aafavelino/GREMLINS}{\tt Projeto Gremlins} 

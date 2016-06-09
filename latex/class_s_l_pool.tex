@@ -1,0 +1,170 @@
+\hypertarget{class_s_l_pool}{}\section{S\+L\+Pool Class Reference}
+\label{class_s_l_pool}\index{S\+L\+Pool@{S\+L\+Pool}}
+
+
+Classe \hyperlink{class_s_l_pool}{S\+L\+Pool}.  
+
+
+
+
+{\ttfamily \#include $<$S\+L\+Pool.\+h$>$}
+
+Inheritance diagram for S\+L\+Pool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s_l_pool}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_l_pool_1_1_block}{Block}
+\begin{DoxyCompactList}\small\item\em struct \hyperlink{struct_s_l_pool_1_1_block}{Block} que define o tamanho em bytes do bloco de memória e ainda possui um ponteiro para o próximo e bloco. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_s_l_pool_1_1_header}{Header}
+\begin{DoxyCompactList}\small\item\em struct \hyperlink{struct_s_l_pool_1_1_header}{Header} com atributo do bloco \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_l_pool_aea29c4db7975b53f06c4fad1b5901cec}{S\+L\+Pool} (size\+\_\+t \+\_\+bytes)
+\begin{DoxyCompactList}\small\item\em construtor da classe \hyperlink{class_s_l_pool}{S\+L\+Pool} \end{DoxyCompactList}\item 
+virtual \hyperlink{class_s_l_pool_aec8dd0c2fe10addb1786447f8ed62c20}{$\sim$\+S\+L\+Pool} ()
+\begin{DoxyCompactList}\small\item\em destrutor da classe \hyperlink{class_s_l_pool}{S\+L\+Pool} \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_s_l_pool_a3bb05b3941f7e04113873ee57b8f3372}{Allocate} (size\+\_\+t bytes)
+\begin{DoxyCompactList}\small\item\em método que aloca o valor passado por parâmetros no bloco inicial de memória seguinte o padrão first\+\_\+it \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_s_l_pool_a67edac73b37d0252301591f73f3d4ecb}{Allocate\+\_\+best} (size\+\_\+t bytes)
+\begin{DoxyCompactList}\small\item\em método que aloca o valor passado por parâmetros no bloco inicial de memória seguindo o padrão best\+\_\+it \end{DoxyCompactList}\item 
+void \hyperlink{class_s_l_pool_aaa30890e07db032bf4834f832d4c5ac8}{Free} (void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em método que libera o ponteiro passado como parâmetro \end{DoxyCompactList}\item 
+void \hyperlink{class_s_l_pool_aafeaf06af67e80854ffbd9e9b5ad5f63}{Memory\+Map} (void)
+\begin{DoxyCompactList}\small\item\em método que constrói um mapa da memória no momento atual \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{class_s_l_pool}{S\+L\+Pool}. 
+
+Assinaturas das funções e definição da classe \hyperlink{class_s_l_pool}{S\+L\+Pool} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+L\+Pool@{S\+L\+Pool}!S\+L\+Pool@{S\+L\+Pool}}
+\index{S\+L\+Pool@{S\+L\+Pool}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{S\+L\+Pool(size\+\_\+t \+\_\+bytes)}{SLPool(size_t _bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+L\+Pool\+::\+S\+L\+Pool (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{\+\_\+bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_s_l_pool_aea29c4db7975b53f06c4fad1b5901cec}{}\label{class_s_l_pool_aea29c4db7975b53f06c4fad1b5901cec}
+
+
+construtor da classe \hyperlink{class_s_l_pool}{S\+L\+Pool} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+t} & que constrói o primeiro bloco de memória do tamanho passado pelo parâmetro \\
+\hline
+\end{DoxyParams}
+\index{S\+L\+Pool@{S\+L\+Pool}!````~S\+L\+Pool@{$\sim$\+S\+L\+Pool}}
+\index{````~S\+L\+Pool@{$\sim$\+S\+L\+Pool}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{$\sim$\+S\+L\+Pool()}{~SLPool()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+L\+Pool\+::$\sim$\+S\+L\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_l_pool_aec8dd0c2fe10addb1786447f8ed62c20}{}\label{class_s_l_pool_aec8dd0c2fe10addb1786447f8ed62c20}
+
+
+destrutor da classe \hyperlink{class_s_l_pool}{S\+L\+Pool} 
+
+
+
+\subsection{Member Function Documentation}
+\index{S\+L\+Pool@{S\+L\+Pool}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{Allocate(size\+\_\+t bytes)}{Allocate(size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ S\+L\+Pool\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_l_pool_a3bb05b3941f7e04113873ee57b8f3372}{}\label{class_s_l_pool_a3bb05b3941f7e04113873ee57b8f3372}
+
+
+método que aloca o valor passado por parâmetros no bloco inicial de memória seguinte o padrão first\+\_\+it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & em size\+\_\+t valor passado que se deseja alocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_storage_pool_a5de4eb49eafbf2adb86eb7e66739c947}{Storage\+Pool}.
+
+\index{S\+L\+Pool@{S\+L\+Pool}!Allocate\+\_\+best@{Allocate\+\_\+best}}
+\index{Allocate\+\_\+best@{Allocate\+\_\+best}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{Allocate\+\_\+best(size\+\_\+t bytes)}{Allocate_best(size_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ S\+L\+Pool\+::\+Allocate\+\_\+best (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_l_pool_a67edac73b37d0252301591f73f3d4ecb}{}\label{class_s_l_pool_a67edac73b37d0252301591f73f3d4ecb}
+
+
+método que aloca o valor passado por parâmetros no bloco inicial de memória seguindo o padrão best\+\_\+it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & em size\+\_\+t valor passado que se deseja alocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_storage_pool_a9224f3fabf7ad7f5b80dd829ac30c69f}{Storage\+Pool}.
+
+\index{S\+L\+Pool@{S\+L\+Pool}!Free@{Free}}
+\index{Free@{Free}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{Free(void $\ast$ptr)}{Free(void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+L\+Pool\+::\+Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_l_pool_aaa30890e07db032bf4834f832d4c5ac8}{}\label{class_s_l_pool_aaa30890e07db032bf4834f832d4c5ac8}
+
+
+método que libera o ponteiro passado como parâmetro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & void que é o ponteiro o qual desejo liberar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_storage_pool_a783b53d1799425318d9d4c3d5d90ac7c}{Storage\+Pool}.
+
+\index{S\+L\+Pool@{S\+L\+Pool}!Memory\+Map@{Memory\+Map}}
+\index{Memory\+Map@{Memory\+Map}!S\+L\+Pool@{S\+L\+Pool}}
+\subsubsection[{\texorpdfstring{Memory\+Map(void)}{MemoryMap(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+L\+Pool\+::\+Memory\+Map (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_l_pool_aafeaf06af67e80854ffbd9e9b5ad5f63}{}\label{class_s_l_pool_aafeaf06af67e80854ffbd9e9b5ad5f63}
+
+
+método que constrói um mapa da memória no momento atual 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_storage_pool_aa30940ace73f59c81571feb4234abc1a}{Storage\+Pool}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_s_l_pool_8h}{S\+L\+Pool.\+h}\item 
+include/\hyperlink{_s_l_pool_8inl}{S\+L\+Pool.\+inl}\end{DoxyCompactItemize}

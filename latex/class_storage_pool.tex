@@ -1,0 +1,134 @@
+\hypertarget{class_storage_pool}{}\section{Storage\+Pool Class Reference}
+\label{class_storage_pool}\index{Storage\+Pool@{Storage\+Pool}}
+
+
+{\ttfamily \#include $<$Storage\+Pool.\+h$>$}
+
+Inheritance diagram for Storage\+Pool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_storage_pool}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_storage_pool_af762401e53c754fccb49703579bd3b31}{$\sim$\+Storage\+Pool} ()
+\begin{DoxyCompactList}\small\item\em destrutor da classe \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{class_storage_pool_a5de4eb49eafbf2adb86eb7e66739c947}{Allocate} (size\+\_\+t bytes)=0
+\begin{DoxyCompactList}\small\item\em método que aloca o valor passado por parâmetros no bloco inicial de memória seguinte o padrão first\+\_\+it \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{class_storage_pool_a9224f3fabf7ad7f5b80dd829ac30c69f}{Allocate\+\_\+best} (size\+\_\+t bytes)=0
+\begin{DoxyCompactList}\small\item\em método que aloca o valor passado por parâmetros no bloco inicial de memória seguindo o padrão best\+\_\+it \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_storage_pool_a783b53d1799425318d9d4c3d5d90ac7c}{Free} (void $\ast$ptr)=0
+\begin{DoxyCompactList}\small\item\em método que libera o ponteiro passado como parâmetro \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_storage_pool_aa30940ace73f59c81571feb4234abc1a}{Memory\+Map} (void)=0
+\begin{DoxyCompactList}\small\item\em método que constrói um mapa da memória no momento atual \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Storage\+Pool@{Storage\+Pool}!````~Storage\+Pool@{$\sim$\+Storage\+Pool}}
+\index{````~Storage\+Pool@{$\sim$\+Storage\+Pool}!Storage\+Pool@{Storage\+Pool}}
+\subsubsection[{\texorpdfstring{$\sim$\+Storage\+Pool()}{~StoragePool()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Storage\+Pool\+::$\sim$\+Storage\+Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_storage_pool_af762401e53c754fccb49703579bd3b31}{}\label{class_storage_pool_af762401e53c754fccb49703579bd3b31}
+
+
+destrutor da classe 
+
+
+
+\subsection{Member Function Documentation}
+\index{Storage\+Pool@{Storage\+Pool}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!Storage\+Pool@{Storage\+Pool}}
+\subsubsection[{\texorpdfstring{Allocate(size\+\_\+t bytes)=0}{Allocate(size_t bytes)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Storage\+Pool\+::\+Allocate (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_storage_pool_a5de4eb49eafbf2adb86eb7e66739c947}{}\label{class_storage_pool_a5de4eb49eafbf2adb86eb7e66739c947}
+
+
+método que aloca o valor passado por parâmetros no bloco inicial de memória seguinte o padrão first\+\_\+it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & em size\+\_\+t valor passado que se deseja alocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_s_l_pool_a3bb05b3941f7e04113873ee57b8f3372}{S\+L\+Pool}.
+
+\index{Storage\+Pool@{Storage\+Pool}!Allocate\+\_\+best@{Allocate\+\_\+best}}
+\index{Allocate\+\_\+best@{Allocate\+\_\+best}!Storage\+Pool@{Storage\+Pool}}
+\subsubsection[{\texorpdfstring{Allocate\+\_\+best(size\+\_\+t bytes)=0}{Allocate_best(size_t bytes)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Storage\+Pool\+::\+Allocate\+\_\+best (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_storage_pool_a9224f3fabf7ad7f5b80dd829ac30c69f}{}\label{class_storage_pool_a9224f3fabf7ad7f5b80dd829ac30c69f}
+
+
+método que aloca o valor passado por parâmetros no bloco inicial de memória seguindo o padrão best\+\_\+it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & em size\+\_\+t valor passado que se deseja alocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_s_l_pool_a67edac73b37d0252301591f73f3d4ecb}{S\+L\+Pool}.
+
+\index{Storage\+Pool@{Storage\+Pool}!Free@{Free}}
+\index{Free@{Free}!Storage\+Pool@{Storage\+Pool}}
+\subsubsection[{\texorpdfstring{Free(void $\ast$ptr)=0}{Free(void *ptr)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Storage\+Pool\+::\+Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_storage_pool_a783b53d1799425318d9d4c3d5d90ac7c}{}\label{class_storage_pool_a783b53d1799425318d9d4c3d5d90ac7c}
+
+
+método que libera o ponteiro passado como parâmetro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & void que é o ponteiro o qual desejo liberar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_s_l_pool_aaa30890e07db032bf4834f832d4c5ac8}{S\+L\+Pool}.
+
+\index{Storage\+Pool@{Storage\+Pool}!Memory\+Map@{Memory\+Map}}
+\index{Memory\+Map@{Memory\+Map}!Storage\+Pool@{Storage\+Pool}}
+\subsubsection[{\texorpdfstring{Memory\+Map(void)=0}{MemoryMap(void)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Storage\+Pool\+::\+Memory\+Map (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_storage_pool_aa30940ace73f59c81571feb4234abc1a}{}\label{class_storage_pool_aa30940ace73f59c81571feb4234abc1a}
+
+
+método que constrói um mapa da memória no momento atual 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_s_l_pool_aafeaf06af67e80854ffbd9e9b5ad5f63}{S\+L\+Pool}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_storage_pool_8h}{Storage\+Pool.\+h}\end{DoxyCompactItemize}

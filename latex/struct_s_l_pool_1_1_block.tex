@@ -1,0 +1,78 @@
+\hypertarget{struct_s_l_pool_1_1_block}{}\section{S\+L\+Pool\+:\+:Block Struct Reference}
+\label{struct_s_l_pool_1_1_block}\index{S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}}
+
+
+struct \hyperlink{struct_s_l_pool_1_1_block}{Block} que define o tamanho em bytes do bloco de memória e ainda possui um ponteiro para o próximo e bloco.  
+
+
+
+
+{\ttfamily \#include $<$S\+L\+Pool.\+h$>$}
+
+Inheritance diagram for S\+L\+Pool\+:\+:Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_s_l_pool_1_1_block}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8a32fd11caed7c39eb5ab3949a612a14b9}{Block\+Size} = 16
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_s_l_pool_1_1_block_a2657816d1a41e84aa7ad25cdcf83ac60}{Block} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\hyperlink{struct_s_l_pool_1_1_block}{Block} $\ast$ \hyperlink{struct_s_l_pool_1_1_block_ac626694affad2d9cdb8c93764d151225}{mp\_Next}\\
+\>char \hyperlink{struct_s_l_pool_1_1_block_a5fcd86a9b213418deea8c65571290fbd}{mc\_RawArea} \mbox{[}\hyperlink{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8a32fd11caed7c39eb5ab3949a612a14b9}{BlockSize}-\/sizeof(\hyperlink{struct_s_l_pool_1_1_header}{Header})\mbox{]}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct \hyperlink{struct_s_l_pool_1_1_block}{Block} que define o tamanho em bytes do bloco de memória e ainda possui um ponteiro para o próximo e bloco. 
+
+\subsection{Member Enumeration Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8}{}\label{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Block\+Size@{Block\+Size}!S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}}\index{S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}!Block\+Size@{Block\+Size}}\item[{\em 
+Block\+Size\hypertarget{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8a32fd11caed7c39eb5ab3949a612a14b9}{}\label{struct_s_l_pool_1_1_block_adbb416e65dd0d7aa2121e30b34424db8a32fd11caed7c39eb5ab3949a612a14b9}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}!Block@{Block}}
+\index{Block@{Block}!S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}}
+\subsubsection[{\texorpdfstring{Block()}{Block()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+L\+Pool\+::\+Block\+::\+Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_s_l_pool_1_1_block_a2657816d1a41e84aa7ad25cdcf83ac60}{}\label{struct_s_l_pool_1_1_block_a2657816d1a41e84aa7ad25cdcf83ac60}
+
+
+\subsection{Member Data Documentation}
+\subsubsection[{\texorpdfstring{"@2}{@2}}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }\hypertarget{struct_s_l_pool_1_1_block_a77176c27d7b62721129f2d2539ec72b5}{}\label{struct_s_l_pool_1_1_block_a77176c27d7b62721129f2d2539ec72b5}
+\index{S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}!mc\+\_\+\+Raw\+Area@{mc\+\_\+\+Raw\+Area}}
+\index{mc\+\_\+\+Raw\+Area@{mc\+\_\+\+Raw\+Area}!S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}}
+\subsubsection[{\texorpdfstring{mc\+\_\+\+Raw\+Area}{mc_RawArea}}]{\setlength{\rightskip}{0pt plus 5cm}char S\+L\+Pool\+::\+Block\+::mc\+\_\+\+Raw\+Area\mbox{[}{\bf Block\+Size}-\/sizeof({\bf Header})\mbox{]}}\hypertarget{struct_s_l_pool_1_1_block_a5fcd86a9b213418deea8c65571290fbd}{}\label{struct_s_l_pool_1_1_block_a5fcd86a9b213418deea8c65571290fbd}
+\index{S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}!mp\+\_\+\+Next@{mp\+\_\+\+Next}}
+\index{mp\+\_\+\+Next@{mp\+\_\+\+Next}!S\+L\+Pool\+::\+Block@{S\+L\+Pool\+::\+Block}}
+\subsubsection[{\texorpdfstring{mp\+\_\+\+Next}{mp_Next}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block}$\ast$ S\+L\+Pool\+::\+Block\+::mp\+\_\+\+Next}\hypertarget{struct_s_l_pool_1_1_block_ac626694affad2d9cdb8c93764d151225}{}\label{struct_s_l_pool_1_1_block_ac626694affad2d9cdb8c93764d151225}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_s_l_pool_8h}{S\+L\+Pool.\+h}\end{DoxyCompactItemize}
