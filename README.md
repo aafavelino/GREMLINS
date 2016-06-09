@@ -3,7 +3,11 @@
 
 ##Descrição
 
+<<<<<<< HEAD
 O GREMLINS é um gerenciador de memória que requisita ao sistema operacional um determinado bloco de memória e a partir do mesmo são realizadas operações de alocação de memória em blocos menores quando solicitado pelo cliente. No gremlins existem duas funções uma Allocate e uma Free nas quais uma realiza alocações e a outra libera memória alocada. Neste trabalho tivemos a colaboração do Professor Selan, na funcão de testes StoragePoolTest com o uso da priority_queue a qual até então não estava sendo utilizada. 
+=======
+O GREMLINS é um gerenciador de memória que requisita ao sistema operacional um determinado bloco de memória e a partir do mesmo são realizadas operações de alocação de memória em blocos menores quando solicitado pelo cliente. No gremlins existem duas funções uma Allocate e uma Free nas quais uma realiza alocações e a outra libera memória alocada. Neste trabalho tivemos a colaboração do Professor Selan, na funcão de testes StoragePoolTest com o uso da priority_queue a qual até então não estava sendo utilizada.
+>>>>>>> origin/master
 
 
 ##Compilação e execução
@@ -20,6 +24,19 @@ g++ -std=c++11 -pedantic -I include/ src/drive_comparador.cpp -o bin/exe && ./bi
 **Teste de Allocate e Free**
 ```shell
 g++ -std=c++11 -pedantic -I include/ src/driver_generico.cpp -o bin/exe -D TIPO1 && ./bin/exe
+<<<<<<< HEAD
+=======
+```
+
+**Teste de Allocate Best e Free**
+```shell
+g++ -std=c++11 -pedantic -I include/ src/driver_generico.cpp -o bin/exe -D TIPO2 && ./bin/exe
+```
+
+**Teste geral**
+```shell
+sh run.sh
+>>>>>>> origin/master
 ```
 
 **Teste de Allocate Best e Free**
