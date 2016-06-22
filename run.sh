@@ -1,5 +1,3 @@
-echo ">>> Iniciando Testes...\n\n\n"
-
 echo ">> Teste Proposto no Projeto\n"
 g++ -std=c++11 -pedantic -I include/ src/driver_gremlins.cpp -o bin/exe && ./bin/exe
 
