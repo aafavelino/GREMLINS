@@ -65,7 +65,7 @@ int main(int argc, const char *argv[]) {
     std::string surname[2] = {"Viana", "Vieira"};
     std::random_device r;
     
-    std::cout << "Elton " << surname[r()%2] << std::endl;
+    std::cout << "Nalbert " << surname[r()%2] << std::endl;
 }
 
 #endif
