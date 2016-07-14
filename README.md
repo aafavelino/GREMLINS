@@ -53,20 +53,3 @@ Selan R. dos Santos
 
 # #SomosTodosNalbert
 
-## (Emotional) Support/Mana Provider
-```cpp
-#ifndef MAIN_CPP // Just kidding (inside joke)
-#define MAIN_CPP // #SomosTodosNalbert
-
-#include <iostream>
-#include <random>
-
-int main(int argc, const char *argv[]) {
-    std::string surname[2] = {"Viana", "Vieira"};
-    std::random_device r;
-    
-    std::cout << "Nalbert " << surname[r()%2] << std::endl;
-}
-
-#endif
-```
